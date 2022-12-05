@@ -54,5 +54,5 @@ body {
 .kanban-dropzone {
     height: 10px;
     background-color: rgb(92, 209, 209);
-    transition: .4s;
+    transition: .2s;
 }
