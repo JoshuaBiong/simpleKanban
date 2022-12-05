@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: grid;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.kanban-container {
+    display: flex;
+    padding: 30px;
+    background-color: rgb(19, 82, 82);
+    width: 800px;
+    border-radius: 10px;
+}
+
+
+/* kanbanColumn  */
+
+
+/* kanbanTitle */
+
+.kanban-title {
+    font-size: 30px;
+    color: white;
+}
+
+
+/* kanbanItem */
+
+.kanban-item {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+
+/* kanbanInput */
+
+.kanban-input {
+    width: 150px;
+    max-width: 150px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* dropZone */
+
+.kanban-dropzone {
+    height: 10px;
+    background-color: rgb(92, 209, 209);
+    transition: .4s;
+}
