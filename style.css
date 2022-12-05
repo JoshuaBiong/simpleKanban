@@ -4,12 +4,6 @@
     box-sizing: grid;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .kanban-container {
     display: flex;
     padding: 30px;
@@ -21,12 +15,21 @@ body {
 
 /* kanbanColumn  */
 
+.kanban-column {
+    flex: 1;
+}
+
+.kanban-column:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 /* kanbanTitle */
 
 .kanban-title {
     font-size: 30px;
     color: white;
+    user-select: none;
 }
 
 
@@ -41,8 +44,8 @@ body {
 /* kanbanInput */
 
 .kanban-input {
-    width: 150px;
-    max-width: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
     padding: 10px 10px;
     background-color: white;
     border-radius: 5px;
@@ -53,6 +56,10 @@ body {
 
 .kanban-dropzone {
     height: 10px;
-    background-color: rgb(92, 209, 209);
-    transition: .2s;
+    transition: background .15s, height .15s;
+}
+
+.kanban-dropzone-active {
+    height: 30px;
+    background: rgba(39, 96, 104, 0.726);
 }
