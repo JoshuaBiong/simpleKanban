@@ -9,6 +9,5 @@ Kanban has a feature of drag and drop the especific task to a especific progress
 
 ## Features
 
-- Light/dark mode toggle
 - drag and drop
 
