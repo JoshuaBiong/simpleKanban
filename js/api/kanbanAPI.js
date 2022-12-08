@@ -1,5 +1,5 @@
 export default class KanbanAPI {
-
+    // reading data
     static getItems(columnId) {
         const column = read().find(column => column.id == columnId);
 
@@ -10,6 +10,27 @@ export default class KanbanAPI {
         return column.items;
     }
 
+    // creating data
+
+    static insertItem(columnId, content) {
+
+        const data = read();
+        const column = data.find(column => column.id == columnId)
+        const items = {
+            id: Math.floor(Math.random() * 100000000),
+            content
+        };
+
+        if (!column) {
+            throw console.error("There is no Content");
+        }
+
+        column.items.push(items);
+        save(data)
+        return items
+    }
+
+    // updating item
 }
 
 function read() {

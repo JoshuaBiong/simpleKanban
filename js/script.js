@@ -1,3 +1,3 @@
 import KanbanAPI from "./api/kanbanAPI.js";
 
-console.log(KanbanAPI.getItems(1))
+console.log(KanbanAPI.insertItem(2, "new items"))
